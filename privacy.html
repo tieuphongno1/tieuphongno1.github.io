@@ -19,7 +19,7 @@
 <body>
   <main>
     <h1>Flow MCN Privacy Policy</h1>
-    <p class="updated">Last updated: 26 September 2026 · <a href="index.html">Home</a></p>
+    <p class="updated">Last updated: 28 September 2026 · <a href="index.html">Home</a></p>
 
     <p>Flow MCN is a desktop application operated by our company for our multi-channel network. YouTube channel owners use their own Google accounts, including Gmail addresses outside our company, to grant read-only access. Staff then view that data in the desktop app. This policy explains what we collect when someone connects a YouTube channel, how we use it, and how to revoke access. Flow MCN is not a public consumer app and is not offered in any store.</p>
 
@@ -47,18 +47,31 @@
     <h2>4. Storage and security</h2>
     <p>Data is stored in our production database. OAuth refresh tokens are encrypted at rest (AES-256-GCM). Access inside Flow MCN is limited by role (admin / manager / staff).</p>
 
-    <h2>5. Retention</h2>
+    <h2>5. How we protect sensitive data</h2>
+    <p>Sensitive data in Flow MCN is YouTube channel id, title, and thumbnail; Analytics (views and watch time); estimated revenue; and OAuth refresh tokens. We protect that data as follows:</p>
+    <ul>
+      <li><strong>In transit.</strong> The website, the API, and calls to Google use HTTPS/TLS.</li>
+      <li><strong>At rest.</strong> OAuth refresh tokens are encrypted with AES-256-GCM before they are stored. Database access is restricted to the production host.</li>
+      <li><strong>Access control.</strong> Only authenticated staff with a role (admin, manager, or the assigned channel owner) can see a channel's metrics. Staff cannot see channels they are not assigned to. We do not give this data to advertisers or sell it.</li>
+      <li><strong>No model training or ads.</strong> We do not use the data to train public models or for ads.</li>
+      <li><strong>Retention.</strong> Tokens and metrics are kept while the channel stays linked. Unlink or Google revoke stops new syncs; refresh tokens are deleted or become unusable.</li>
+      <li><strong>Revoke.</strong> The channel owner can revoke Flow MCN at any time at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">https://myaccount.google.com/permissions</a>.</li>
+    </ul>
+    <p>Questions about this protection: <a href="mailto:thulinhtieuphong@phteam.tv">thulinhtieuphong@phteam.tv</a></p>
+    <p>Cách chúng tôi bảo vệ dữ liệu nhạy cảm: mã kênh, tiêu đề, ảnh thu nhỏ, Analytics (lượt xem, thời gian xem), doanh thu ước tính và token làm mới OAuth. Dữ liệu được truyền bằng HTTPS/TLS. Token được mã hóa AES-256-GCM trước khi lưu; chỉ máy chủ production truy cập cơ sở dữ liệu. Chỉ nhân sự đã đăng nhập với vai trò quản trị, quản lý, hoặc chủ kênh được gán mới xem số liệu kênh; nhân sự không xem kênh chưa được gán. Chúng tôi không bán dữ liệu, không đưa cho nhà quảng cáo, không dùng để huấn luyện mô hình công khai hay cho quảng cáo. Token và số liệu được giữ khi kênh còn liên kết; gỡ liên kết hoặc thu hồi quyền Google thì ngừng đồng bộ và token bị xóa hoặc không dùng được. Thu hồi bất kỳ lúc nào tại https://myaccount.google.com/permissions. Liên hệ: thulinhtieuphong@phteam.tv</p>
+
+    <h2>6. Retention</h2>
     <p>Channel metrics and tokens stay while the channel remains linked for our operations. If a channel is unlinked or a staff account is removed, we stop new syncs and may delete or anonymize records according to our company process.</p>
 
-    <h2>6. How to revoke YouTube access</h2>
+    <h2>7. How to revoke YouTube access</h2>
     <p>The channel owner can revoke Flow MCN at any time in their Google Account:</p>
     <p><a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">https://myaccount.google.com/permissions</a></p>
     <p>After revoke, our refresh token stops working and we cannot pull new Analytics.</p>
 
-    <h2>7. Contact</h2>
+    <h2>8. Contact</h2>
     <p>Questions about this policy or YouTube data: <a href="mailto:thulinhtieuphong@phteam.tv">thulinhtieuphong@phteam.tv</a></p>
 
-    <h2>8. Chính sách (tiếng Việt)</h2>
+    <h2>9. Chính sách (tiếng Việt)</h2>
     <p>Flow MCN là phần mềm desktop cho mạng lưới kênh. Chủ kênh YouTube dùng tài khoản Google của chính họ (gồm địa chỉ Gmail ngoài công ty) để cấp quyền chỉ đọc. Nhân sự xem lượt xem, doanh thu ước tính và báo cáo trong ứng dụng desktop. Flow MCN không phải ứng dụng tiêu dùng công khai và không có trên bất kỳ cửa hàng nào. Chúng tôi chỉ <strong>đọc</strong> thông tin kênh, lượt xem, và doanh thu ước tính — không đăng/sửa/xóa video, không bán dữ liệu. Token đăng nhập YouTube được mã hóa. Chủ kênh gỡ quyền bất kỳ lúc nào tại trang quyền Google ở trên.</p>
   </main>
 </body>
